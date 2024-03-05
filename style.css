@@ -7,9 +7,29 @@
     font-style: normal;
 }
 .main_box{
-    background-image: url("photo.jpg");
     background-size: cover;
     height: 100vh;
+    animation: slide 60s ease-in 2s infinite;
+}
+@keyframes slide {
+    0%{
+        background-image: url("photo.jpg");
+    }
+    20%{
+        background-image: url("image.jpg");
+    }
+    40%{
+        background-image: url("images\ \(1\).jpg");
+    }
+    60%{
+        background-image: url("images.jpg");
+    }
+    80%{
+        background-image: url("img.jpg");
+    }
+    100%{
+        background-image: url("im.jpg");
+    }
 }
 .btn_one i{
     color: white;
@@ -19,7 +39,7 @@
     position: absolute;
     left: 16px;
     cursor: pointer;
-    transition: linear 0.3s 0s;
+    transition: linear 0.5s 0s;
 }
 .sidebar_menu{
     position: fixed;
@@ -44,7 +64,6 @@
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    text-shadow: 0 2px 2px white;
 }
 .sidebar_menu .btn_two i{
     color: grey;
